@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Metode Pembayaran</title>
+        <link rel="stylesheet" href="./css/metode-pembayaran.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- Header start -->
+        <header>
+            <nav class="navbar">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="./asset/logo.png" alt="" />Travelyu 
+                </a>
+              </div>
+      
+              <ul class="nav-link">
+                <li>
+                  <p> Detail Pemesanan</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </li>
+                <li>
+                  <p><span>Pembayaran</span></p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </li>
+                <li>
+                    <p>Selesai</p>
+                </li>
+              </ul>
+      
+              <div class="profile-container">
+                <div class="logout">
+                  <button>Logout</button>
+                </div>
+                <div class="profile">
+                  <a href="">
+                    <img src="./asset/profile.jpg" alt="" />
+                  </a>
+                </div>
+              
+            </nav>
+          </header>
+        <!-- Header End -->
+
+        <!-- Content Start -->
+        <div class="pembayaran">
+            <div class="card-container-pembayaran">
+                <div class="introcardpembayaran">
+                    <div class="logopembayaran">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <div class="title-pembayaran">
+                     <p>Metode Pembayaran</p>
+                    </div>
+                </div>
+                <div class="card-metodepembayaran">
+                    <div class="card-content-metodepembayaran">
+                        <form action="./pembayaran.html" class="payment-container" method="get">
+                            <div class="payment-option">
+                                <h2>Bayar dengan ATM / MOBILE / INTERNET BANKING</h2>
+                                <label class="bank-option">
+                                    <input type="radio" name="payment" value="mandiri">
+                                    <img class="bank" src="./asset/mandiri.jpeg" alt="">
+                                </label>
+                                <label class="bank-option">
+                                    <input type="radio" name="payment" value="bank_bri">
+                                    <img class="bank" src="./asset/BRI.jpeg" alt="">
+                                </label>
+                                <label class="bank-option">
+                                    <input type="radio" name="payment" value="bsi">
+                                    <img class="bank" src="./asset/BSI.jpeg" alt="">
+                                </label>
+                            </div>
+                        
+                            <div class="payment-option">
+                                <h2>Bayar dengan Gerai Retail</h2>
+                                <label class="store-option">
+                                    <input type="radio" name="payment" value="alfamart">
+                                    <img class="retail" src="./asset/Alfamart.jpeg" alt="">
+                                </label>
+                                <label class="store-option">
+                                    <input type="radio" name="payment" value="indomaret">
+                                    <img class="retail" src="./asset/Indomaret.jpeg" alt="">
+                                </label>
+                            </div>
+                        
+                            <div class="payment-option">
+                                <h2>Bayar dengan E-Wallet</h2>
+                                <label class="wallet-option">
+                                    <input type="radio" name="payment" value="linkaja">
+                                    <img class="wallet" src="./asset/Link-Aja.jpeg" alt="">
+                                </label>
+                                <label class="wallet-option">
+                                    <input type="radio" name="payment" value="ovo">
+                                    <img class="wallet" src="./asset/ovo.jpeg" alt="">
+                                </label>
+                                <label class="wallet-option">
+                                    <input type="radio" name="payment" value="dana">
+                                    <img class="wallet" src="./asset/dana.jpeg" alt="">
+                                </label>
+                            </div>
+
+                            <button type="submit" class="continue-btn">Lanjutkan</button>
+
+                           
+                            <input type="hidden" name="type" id="type">
+                            <input type="hidden" name="title" id="title">
+                            <input type="hidden" name="nama-pemesan" id="nama-pemesan">
+                            <input type="hidden" name="nik" id="nik">
+                            <input type="hidden" name="email" id="email">
+                            <input type="hidden" name="no-hp" id="no-hp">
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content End -->
+
+        <!-- Footer Start -->
+        <footer>
+            <div class="card-container-footer">
+                <div class="card-footer">
+                    <a href="">
+                      <img src="./asset/logo.png" alt="">Travelyu
+                    </a>
+                    <div class="card-content-footer">
+                        <div class="service">
+                            <h1>Service</h1>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">order</a></li>
+                                <li><a href="">Destination</a></li>
+                                <!-- <li><a href="">My Order</a></li>
+                                <li><a href="">About</a></li> -->
+                            </ul> 
+                        </div>
+                        <div class="support">
+                            <h1>Support</h1>
+                        <ul>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">Term of Use</a></li>
+                        </ul>
+                        </div>
+                        <div class="contact">
+                            <h1>Contact</h1>
+                        <ul>
+                            <li><a href="">+62 87812552</a></li>
+                            <li><a href="">travelyu@contact.us</a></li>
+                            <li><a href="">Jl. Bersamamu No. 26</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+        <script src="./js/metode-pembayaran.js"></script>
+    </body>
+</html>

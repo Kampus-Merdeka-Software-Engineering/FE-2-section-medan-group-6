@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{padding :0;
+ margin :0;
+font-family: 'poppins';}
+
+
+
+/* Header Start */
+nav.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding : 5px 30px;
+    box-shadow: 0px 0px 5px rgb(152, 149, 149);
+}
+
+.namaprofil  {
+    width : 100px;
+    /* height: 50px; */
+    display : flex;
+}
+
+.namaprofil img {
+    width: 70px;
+    height : 30px;
+    padding-top : 10px
+}
+
+.profil img {width : 80%;
+}
+
+.namaprofil { color: #3C44FD;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 15px;
+}
+
+.header ul{list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    color: #000;
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header  ul li a{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    color: #000;
+}
+
+.header img {
+    width : 70%;
+}
+
+.header span {color : #0F66CB}
+
+/* Header End */
+
+/* Content Start */
+/* Content intro start */
+.intro {
+    text-align: center;
+    padding : 30px;
+}
+
+.intro span {color: #3C44FD;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.intro p {color: #000;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* Content intro end */
+/* Content my order start */
+.card-myorder {
+    width : 750px;
+    height : 175px ;
+    background-color: #FFFFFF; 
+    border-radius: 20px ;
+    padding : 20px 40px; 
+    box-shadow: 0px 0px 2px rgb(84, 82, 82);
+    margin : 20px 225px 20px 225px;
+}
+
+.card-content-myorder {
+    display :flex;
+    padding : 10px;
+    align-items: center;
+}
+
+.fotopemesanan {
+    align-items: center;
+    padding-right: 10px;
+}
+
+.fotopemesanan img {
+    width : 150px;
+
+}
+
+.transmisi {
+    display : flex;
+    gap : 10px;
+    align-items: center;
+}
+
+.bagasi {
+    display : flex;
+    gap : 10px;
+    align-items: center;
+}
+
+.kursi {
+    display : flex;
+    gap : 10px;
+    align-items: center;
+}
+
+.spesifikasikendaraan {
+    display : flex;
+    gap : 10px
+}
+
+.tanggalpemesanan {
+    display: flex;
+    gap : 10px;
+    align-items: center;
+}
+
+.detailpemesanan {
+    padding : 0px 10px;
+}
+
+.detailpemesanan span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding : 15px 0px
+}
+
+.detailpemesanan p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding : 1px 0px;
+}
+
+.statuspemesanan {
+   margin-left: 50px;
+}
+
+
+.statuspemesanan p {
+    text-align: center;
+    padding: 7px 0px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    background-color: #27c424;
+    width : 100px;
+    border-radius: 5px;
+}
+/* Content my order end */
+/* Content End */
+
+/* Footer Start */
+.card-footer a img {
+    width: 25%;
+  }
+  
+  .card-footer a {
+    color: #3c44fd;
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  footer {
+    background: #002561;
+    padding: 30px;
+    margin-top: 200px ;
+  }
+  .card-footer {
+    height: 200px;
+    background-color: #fdfdfd;
+    border-radius: 50px 50px 50px 50px;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  
+  .card-content-footer {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right: 50px;
+  }
+  
+  .card-content-footer h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    
+  }
+  
+  .card-content-footer ul {
+    list-style: none;
+    align-items: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    width: 200px;
+  }
+  
+  .card-content-footer ul li a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 15px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px;
+  }
+  
+  .card-content-footer .support {
+   padding-bottom: 20px;
+  }
+/* Footer End */

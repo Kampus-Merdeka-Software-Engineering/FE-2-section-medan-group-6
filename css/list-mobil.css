@@ -1,0 +1,347 @@
+
+*{
+    padding :0;
+    margin :0;
+    font-family: "poppins", sans-serif;
+}
+
+:root {
+    --color-1: black;
+    --color-2: white;
+    --color-3: #3c44fd;
+    --color-4: #0155b7;
+    --color-5: #002561;
+  }
+
+/* Header Start */
+.navbar {
+    box-shadow: 0 0 5px grey;
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    text-align: center;
+    width: 88%;
+    top: 0;
+    padding: 10px 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  
+  .logo {
+    width: 250px;
+  }
+  
+  .logo a img {
+    width: 20%;
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-3);
+    font-size: 28px;
+    font-weight: 800;
+  }
+  
+  .navbar ul {
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-1);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar ul li a:hover {
+    color: var(--color-3);
+    font-weight: bold;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logout button {
+    margin-right: 30px;
+    padding: 7px 25px;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .logout button:hover {
+  }
+  
+  .profile a img {
+    width: 60%;
+  }
+/* Header End */
+
+/* Content Start */
+/* Content Intro Start */
+.intro {
+    margin-top: 100px;
+}
+
+.card-intro {
+    width : 650px;
+    height : 120px ;
+    background-color: #FFFFFF; 
+    border-radius: 20px ;
+    padding : 10px 20px; 
+    box-shadow: 0px 0px 2px black;
+    margin : 50px 200px 30px 290px;
+}
+
+.card-content-intro {
+    display :flex;
+    align-items: center;
+}
+
+.buttonpencarian { 
+    text-align: center;
+    padding: 7px 0px;
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal; 
+    background-color: #0066B3;
+    width : 140px;
+    border-radius: 5px;
+    margin : 10px 10px;
+    cursor : pointer;
+
+}
+/* Content Intro End */
+/* Content Filter Start*/
+.filter {
+    display : flex;
+    padding-left : 230px;
+    gap : 5px;
+}
+
+.filter span {
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 10px;
+
+}
+.filter-content {
+    display : flex;
+    gap : 15px
+}
+.filterkapasitas { 
+    text-align: center;
+    padding: 5px 0px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #0066B3;
+    width : 200px;
+    border-radius: 5px;
+    cursor : pointer;
+
+}
+
+.filtertransmisi {
+    text-align: center;
+    padding: 5px 0px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #0066B3;
+    width : 100px;
+    border-radius: 5px;
+    cursor : pointer;
+
+}
+/* Content Filter End */
+/* Content Menu Start */
+.card-menu {
+    width : 750px;
+    height : 170px ;
+    background-color: #FFFFFF; 
+    border-radius: 20px ;
+    padding : 0px 40px; 
+    box-shadow: 0px 0px 2px black;
+    margin : 20px 200px 20px 220px;
+}
+
+.card-content-menu {
+    display :flex;
+    padding : 10px;
+    align-items: center;
+}
+
+.fotopemesanan {
+    align-items: center;
+    padding-right: 10px;
+}
+.fotopemesanan img {
+    width : 130px;
+
+}
+
+.transmisi {
+    display : flex;
+    gap : 10px;
+    align-items: center;
+}
+
+.bagasi {
+    display : flex;
+    gap : 10px;
+    align-items: center;
+}
+.kursi {
+    display : flex;
+    gap : 10px;
+    align-items: center;
+}
+.spesifikasikendaraan {
+    display : flex;
+    gap : 10px;
+    padding : 3px;
+}
+
+.detailpemesanan {
+    padding : 10px 10px;
+}
+.detailpemesanan span {
+    color: #000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding : 15px 0px
+}
+
+.detailpemesanan p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding : 3px 0px;
+}
+.driver-option {
+    padding-right : 20px;
+    font-size: 17px;
+}
+
+.harga {
+    margin-left: 30px;
+}
+
+.harga span {
+    color: #000;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.harga p {
+  margin-bottom: 10px;
+}
+
+.buttonstep {
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 30px;
+    margin-left: 75px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #0066B3;
+    border-radius: 5px;
+    cursor : pointer;
+}
+/* Content Menu End */
+/* Content End */
+
+/* Footer Start */
+.card-footer a img {
+  width: 25%;
+}
+
+.card-footer a {
+  color: #3c44fd;
+  font-size: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+}
+
+footer {
+  background: #002561;
+  padding: 30px;
+  margin-top: 200px ;
+}
+.card-footer {
+  height: 200px;
+  background-color: #fdfdfd;
+  border-radius: 50px 50px 50px 50px;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.card-content-footer {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.card-content-footer h1 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  
+}
+
+.card-content-footer ul {
+  list-style: none;
+  align-items: center;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  width: 200px;
+}
+
+.card-content-footer ul li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 15px;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 3px;
+}
+
+.card-content-footer .support {
+ padding-bottom: 20px;
+}
+/* Footer End */

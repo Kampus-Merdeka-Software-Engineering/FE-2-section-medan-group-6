@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/detail-pemesanan-motor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="./asset/logo.png" alt="" />Travelyu 
+            </a>
+          </div>
+  
+          <ul class="nav-link">
+            <li>
+              <p><span> Detail Pemesanan </span></p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </li>
+            <li>
+              <p>Pembayaran</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </li>
+            <li>
+                <p>Selesai</p>
+            </li>
+          </ul>
+  
+          <div class="profile-container">
+            <div class="logout">
+              <button>Logout</button>
+            </div>
+            <div class="profile">
+              <a href="">
+                <img src="./asset/profile.jpg" alt="" />
+              </a>
+            </div>
+          
+        </nav>
+      </header>
+    <!-- Header End -->
+
+    <!-- Content Start -->
+    <div class="detailpemesanan">
+        <div class="card-detailpemesanan">
+            <div class="card-content-detailpemesanan">
+                <div class="fotopemesanan">
+                    <img src="./asset/motor-vario-160.jpeg" alt="">
+                </div>
+                <div class="pemesanan">
+                    <p><span>Honda Vario 160</span></p>
+                    <div class="spesifikasikendaraan">
+                        <div class="transmisi">
+                            <i class="fa-solid fa-motorcycle"></i>
+                            <p>Matic</p>
+                        </div>
+                    </div>
+                    <p>Location</p>
+                    <div class="tanggalpemesanan">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p>Jum, 26 Okt 2023 09:00 - Sab, 27 Okt 2023 12:00</p>
+                    </div>
+                </div>
+                <div class="harga">
+                    <p>Total</p>
+                    <p> <span>Rp. XXX.XXX</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="card-form-pemesan">
+        <div class="text-with-icon md" style="margin: 10px;">
+            <i class="fa-solid fa-file-invoice"></i>
+            <h2>Data Pemesan</h2>
+        </div>
+        <form action="./metode-pembayaran.html" id="form-pemesan">
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <label for="title">Titel</label>
+                        <input type="text" name="title" class="form-control">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="input-group">
+                        <label for="nama_pemesan">Nama Pemesan</label>
+                        <input type="text" name="nama-pemesan" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <label for="nik">NIK</label>
+                        <input type="text" class="form-control" name="nik">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group">
+                        <label for="no-hp">Nomor Handphone</label>
+                        <input type="text" class="form-control" name="no-hp">
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="type" value="motor">
+        </form>
+    </div>
+    <div style="text-align: center;">
+        <button type="submit" form="form-pemesan" id="btn-next">
+          Lanjutkan
+        </button>
+    </div>
+    <!-- Content End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="card-container-footer">
+            <div class="card-footer">
+                <a href="">
+                  <img src="./asset/logo.png" alt="">Travelyu
+                </a>
+                <div class="card-content-footer">
+                    <div class="service">
+                        <h1>Service</h1>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">order</a></li>
+                            <li><a href="">Destination</a></li>
+                            <!-- <li><a href="">My Order</a></li>
+                            <li><a href="">About</a></li> -->
+                        </ul> 
+                    </div>
+                    <div class="support">
+                        <h1>Support</h1>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Term of Use</a></li>
+                    </ul>
+                    </div>
+                    <div class="contact">
+                        <h1>Contact</h1>
+                    <ul>
+                        <li><a href="">+62 87812552</a></li>
+                        <li><a href="">travelyu@contact.us</a></li>
+                        <li><a href="">Jl. Bersamamu No. 26</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+</body>
+
+</html>

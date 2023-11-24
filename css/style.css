@@ -1,0 +1,625 @@
+:root {
+  --color-1: black;
+  --color-2: white;
+  --color-3: #3c44fd;
+  --color-4: #0155b7;
+  --color-5: #002561;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4em;
+  transition: 0.5s;
+}
+
+/* Navbar Start */
+.navbar {
+  box-shadow: 0 0 5px grey;
+  background-color: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  text-align: center;
+  width: 88%;
+  top: 0;
+  padding: 10px 20px;
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.logo {
+  width: 250px;
+}
+
+.logo a img {
+  width: 20%;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-3);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.navbar ul {
+  padding-right: 10px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-1);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar ul li a:hover {
+  color: var(--color-3);
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.logout button {
+  margin-right: 30px;
+  padding: 7px 25px;
+  background-color: var(--color-3);
+  color: var(--color-2);
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.logout button:hover {
+  margin-top: -5px;
+}
+
+.profile a img {
+  width: 60%;
+}
+/* Navbar End */
+
+/* Hero Section Start */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+}
+
+.content .content-caption {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content .content-caption h1 {
+  font-size: 50px;
+  padding-left: 50px;
+}
+
+.content .content-caption p {
+  font-size: 15px;
+  font-weight: 100;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+.content  button {
+  margin-top: 30px;
+  margin-left: 50px;
+  padding: 15 25px;
+  background-color: #0066B3;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  border: none;
+}
+
+.content  button:hover {
+  margin-top: -1px;
+}
+
+.content button a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.content .content-img {
+  width: 80%;
+}
+
+.content .content-img img {
+  width: 100%;
+}
+/* Hero Section End */
+
+/* Service Start */
+.service div h1 {
+  text-align: center;
+  padding: 50px;
+  font-size: 45px;
+}
+
+.service-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-content {
+  width: 900px;
+  height: 320px;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid #a6a6a6;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.service-content .form-input #tanggal-mulai-label {
+  position: absolute;
+  top: 130px;
+  left: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input #tanggal-mulai {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  background-color: #fff;
+  position: absolute;
+  top: 160px;
+  left: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input  #waktu-mulai-label {
+  position: absolute;
+  top: 130px;
+  left: 400px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input  #waktu-mulai {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  background-color: #fff;
+  position: absolute;
+  top: 160px;
+  left: 400px;
+  font-size: 20px;
+  text-align: center;
+}
+.service-content .form-input #tanggal-selesai-label {
+  position: absolute;
+  top: 130px;
+  left: 650px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input #tanggal-selesai {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  background-color: #fff;
+  position: absolute;
+  top: 160px;
+  left: 650px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input #waktu-selesai-label {
+  position: absolute;
+  top: 220px;
+  left: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input #waktu-selesai {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  background-color: #fff;
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input  #lokasi-label {
+  position: absolute;
+  top: 220px;
+  left: 400px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .form-input #lokasi {
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #b9b9b9;
+  background-color: #fff;
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.service-content .cari-tiket button {
+  position: absolute;
+  top: 250px;
+  left: 675px;
+  padding: 13px 50px;
+  border-radius: 10px;
+  border: none;
+  background-color:  #0066B3;
+  color: var(--color-2);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.service-content .cari-tiket button:hover {
+  margin-top: -10px;
+}
+
+.service-content-title {
+  width: 790px;
+  height: 80px;
+  position: absolute;
+  margin-left: 110px;
+  border-radius: 0px 20px 0px 0px;
+  background-color: #0155b7;
+}
+
+.service-content-title h1 {
+  position: absolute;
+  left: 150px;
+  top: -25px;
+  color: var(--color-2);
+}
+
+.service-content-title h1 span {
+  font-size: 30px;
+}
+
+.service-content-mobil {
+  position: absolute;
+}
+
+.service-content-motor {
+  position: absolute;
+  margin-top: 160px;
+}
+
+.service-content-mobil button {
+  width: 110px;
+  height: 160px;
+  background-color: #002561;
+  border-radius: 20px 0px 0px 0px;
+  border: none;
+}
+
+
+
+.service-content-mobil button a img {
+  width: 50%;
+}
+
+.service-content-motor button {
+  width: 110px;
+  height: 160px;
+  border-radius: 0px 0px 0px 20px;
+  background-color: #0155b7;
+  border: none;
+}
+
+.service-content-motor button:hover {
+  background-color: var(--color-5);
+  transition: 0.5s;
+}
+
+.service-content-motor button a img {
+  width: 50%;
+}
+/* Service End */
+
+/* Destinations Start */
+.card-destinations-container {
+  background-image: url(../asset/bg-destinations.jpg);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 100px 0 100px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.card-destinations-container::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 2150px;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.destinations-content {
+  margin-top: 200px;
+}
+
+.destinations-content h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.destinations-content p {
+  padding: 20px 100px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card-destinations {
+  width: 250px;
+  height: 320px;
+  background-color: #fff;
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  border: 0.5px solid #9f9f9f;
+}
+
+.card-destinations img {
+  border-radius: 50px;
+  width: 230;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-destinations .card-content-destinations h3 {
+  font-size: 30px;
+  font-family: "Times New Roman";
+}
+
+.card-destinations .card-content-destinations p {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+/* About section Start */
+.about {
+  margin-top: 200px;
+}
+
+.about-content h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.about-content p {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card-profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 100px 0 100px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../asset/bg-our-team.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-profile {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 10px 50px 10px;
+  border: 0.5px solid #9f9f9f;
+}
+
+.card-profile img {
+  border-radius: 50px 20px 50px 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-profile .card-profile-content h3 {
+  font-size: 25px;
+  color: var(--color-3);
+}
+
+.card-profile .card-profile-content p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.card-profile .card-profile-content .univ {
+  padding-top: 20px;
+}
+
+.card-profile .link-sosmed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-profile .link-sosmed a {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-profile .link-sosmed a img {
+  width: 50px;
+}
+/* About Section End */
+
+/* Client Review */
+.client-review {
+  margin-top: 200px;
+}
+
+.client-review-content h1 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.card-client-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 100px 0 100px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-client-container .card-client {
+  width: 300px;
+  height: 400px;
+  box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px 10px 50px 10px;
+  border: 0.5px solid #9f9f9f;
+}
+
+.card-client .card-client-profile img {
+  width: 153px;
+  height: 148px;
+  border-radius: 100px;
+  padding-top: 35px;
+}
+
+.card-client .card-client-review h1 {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.card-client .card-client-review p {
+  padding: 20px;
+}
+/* Client Review End */
+
+/* footer Start */
+.card-footer a img {
+  width: 25%;
+}
+
+.card-footer a {
+  color: #3c44fd;
+  font-size: 50px;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+}
+
+footer {
+  background: #002561;
+  padding: 30px;
+  margin-top: 200px ;
+}
+.card-footer {
+  height: 200px;
+  background-color: #fdfdfd;
+  border-radius: 50px 50px 50px 50px;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.card-content-footer {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+.card-content-footer h1 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  
+}
+
+.card-content-footer ul {
+  list-style: none;
+  align-items: center;
+  color: #000;
+  font-size: 15px;
+  width: 200px;
+}
+
+.card-content-footer ul li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 15px;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 3px;
+}
+
+.card-content-footer .support {
+ padding-bottom: 20px;
+}
+/* Footer End */

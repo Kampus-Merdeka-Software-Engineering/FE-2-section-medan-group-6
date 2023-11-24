@@ -1,0 +1,267 @@
+:root {
+    --color-1: black;
+    --color-2: white;
+    --color-3: #3c44fd;
+    --color-4: #0155b7;
+    --color-5: #002561;
+  }
+
+
+*{
+    padding :0;
+    margin :0;
+    font-family: "poppins", sans-serif;
+}
+
+/* Header Start */
+.navbar {
+    box-shadow: 0 0 5px grey;
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    text-align: center;
+    width: 88%;
+    top: 0;
+    padding: 10px 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  
+  .logo {
+    width: 250px;
+  }
+  
+  .logo a img {
+    width: 20%;
+  }
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-3);
+    font-size: 28px;
+    font-weight: 800;
+  }
+  
+  .navbar ul {
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar ul li p {
+    font-size: 20px;
+  }
+  
+  .navbar ul li span {
+    color: var(--color-3);
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logout button {
+    margin-right: 30px;
+    padding: 7px 25px;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .logout button:hover {
+    margin-top: -5px;
+  }
+  
+  .profile a img {
+    width: 60%;
+  }
+  
+  .navbar ul  li .fa-circle-chevron-right {
+    font-size: 20px;
+  }
+/*Header End  */
+
+/* Content Start */
+.pembayaran {
+    background: #002561;
+    border-radius: 50px 50px 50px 50px;
+    width : 850px;
+    box-shadow: 0px 0px 5px rgb(162, 158, 158);
+    margin : 90px 200px 10px 220px;
+}
+
+.logopembayaran {
+    align-items: center;
+}
+
+.fa-credit-card {
+   font-size: 50px;
+   color: #FFF;
+   padding : 15px 50px 5px;
+
+}
+
+.introcardpembayaran{
+    display : flex;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.title-pembayaran {
+    display: flex;
+    color: var(--color-2);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+.card-metodepembayaran {
+    height : 670px ;
+    background-color: #FFFFFF; 
+    border-radius: 50px 50px 50px 50px;
+    padding : 20px 40px; 
+    box-shadow: 0px 0px 5px rgb(162, 158, 158);
+}
+
+.card-content-metodepembayaran {
+    margin : 10px;
+}
+
+.payment-option {
+    margin-bottom: 20px;
+}
+
+.payment-option input {
+    margin-left: 10px;
+}
+
+.payment-option img {
+    width : 100px;
+    height: 40px;
+    padding-left: 15px;
+}
+.payment-option h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+  
+.bank-option, .store-option, .wallet-option {
+    display: flex;
+    width: 100%;
+    padding-block: 10px;
+    padding-left: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.bank, .retail, .wallet {
+  padding-left: 10px;
+}
+
+.continue-btn {
+    display: flex;
+    justify-content: space-around;
+    margin-inline: auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    padding: 10px;
+    background-color: #0066B3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 750;
+    font-size: 15px;
+}
+/* Content End */
+
+/* Footer Start */
+.card-footer a img {
+    width: 25%;
+  }
+  
+  .card-footer a {
+    color: #3c44fd;
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  footer {
+    background: #002561;
+    padding: 30px;
+    margin-top: 200px ;
+  }
+  .card-footer {
+    height: 200px;
+    background-color: #fdfdfd;
+    border-radius: 50px 50px 50px 50px;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+  }
+  
+  .card-content-footer {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right: 50px;
+  }
+  
+  .card-content-footer h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    
+  }
+  
+  .card-content-footer ul {
+    list-style: none;
+    align-items: center;
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+    width: 200px;
+  }
+  
+  .card-content-footer ul li a {
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 15px;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 3px;
+  }
+  
+  .card-content-footer .support {
+   padding-bottom: 20px;
+  }
+/* Footer End */
