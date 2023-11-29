@@ -641,7 +641,7 @@ footer {
 }
 /* Footer End */
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 400px) {
   .navbar {
     flex-wrap: wrap;
   }
