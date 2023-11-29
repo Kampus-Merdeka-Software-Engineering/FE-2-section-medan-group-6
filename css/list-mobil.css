@@ -22,11 +22,11 @@
     align-items: center;
     position: fixed;
     text-align: center;
-    width: 88%;
+    width: 93%;
     top: 0;
     padding: 10px 20px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
   
   .logo {
@@ -73,7 +73,7 @@
     justify-content: center;
   }
   
-  .logout button {
+  /* .logout button {
     margin-right: 30px;
     padding: 7px 25px;
     background-color: var(--color-3);
@@ -82,10 +82,11 @@
     border: none;
     border-radius: 20px;
     font-weight: bold;
-  }
-  
-  .logout button:hover {
-  }
+  } */
+
+  .profile {
+    margin-left: 100px;
+   }
   
   .profile a img {
     width: 60%;
@@ -126,7 +127,10 @@
     border-radius: 5px;
     margin : 10px 10px;
     cursor : pointer;
+}
 
+.buttonpencarian:hover {
+  background-color: #5f96c1;
 }
 /* Content Intro End */
 /* Content Filter Start*/
@@ -272,6 +276,10 @@
     background-color: #0066B3;
     border-radius: 5px;
     cursor : pointer;
+}
+
+.buttonstep:hover {
+  background-color: #5f96c1;
 }
 /* Content Menu End */
 /* Content End */

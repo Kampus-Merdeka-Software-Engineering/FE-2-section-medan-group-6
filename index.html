@@ -5,6 +5,7 @@
     <title>Travelyu</title>
     <link rel="icon" type="img" href="./asset/logo.png" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <!-- Navbar Start -->
@@ -12,8 +13,12 @@
       <nav class="navbar">
         <div class="logo">
           <a href="index.html">
-            <img src="./asset/logo.png" alt="" />Travelyu 
+            <img src="./asset/logo.png" alt="" />Travelyu
           </a>
+        </div>
+
+        <div class="menu-icon">
+          <button id="menu"> <i id="menu-list" class="ph ph-list"></i> </button>
         </div>
 
         <ul class="nav-link">
@@ -30,17 +35,18 @@
             <a href="my-order.html">My Order</a>
           </li>
         </ul>
-
+        <!-- 
         <div class="profile-container">
           <div class="logout">
             <button>Logout</button>
-          </div>
-          <div class="profile">
+          </div> 
+           <div class="profile">
             <a href="">
               <img src="./asset/profile.jpg" alt="" />
             </a>
           </div>
-        
+          
+        </div> -->
       </nav>
     </header>
     <!-- Navbar End -->
@@ -49,17 +55,16 @@
     <section class="hero" id="home">
       <main class="content">
         <div class="content-caption">
-            <h1>Liburan & Nikmati Tempat Baru di Indonesia</h1>
-            <p>
-             Destinize membuat kamu selalu update terkait tempat liburan baru di
-              Indonesia dengan mengikuti perkembangan para influencer di sosial
-              media
-           </p>
-            <button>
-             <a href="#service">Mulai Sekarang</a>
-            </button>
+          <h1>Liburan & Nikmati Tempat Baru di Indonesia</h1>
+          <p>
+            Destinize membuat kamu selalu update terkait tempat liburan baru di
+            Indonesia dengan mengikuti perkembangan para influencer di sosial
+            media
+          </p>
+          <button>
+            <a href="#service">Mulai Sekarang</a>
+          </button>
         </div>
-        
 
         <div class="content-img">
           <img src="./asset/travel.jpg" alt="" />
@@ -75,40 +80,47 @@
       </div>
       <div class="service-container">
         <div class="service-content">
-
-         <div id="tanggal"></div>
+          <div id="tanggal"></div>
           <form action="list-mobil.html" id="form-pemesanan">
-          <div class="form-input">
-              <label for="tanggal-mulai" id="tanggal-mulai-label">Tanggal Mulai Sewa</label>
-              <input type="date" id="tanggal-mulai" name="tanggal-mulai"/>
-          </div>
-          <div class="form-input">          
-              <label for="waktu-mulai" id="waktu-mulai-label">Waktu Mulai</label>
-              <input type="time" id="waktu-mulai" name="waktu-mulai"/>
-          </div>
-          <div class="form-input">
-              <label for="tanggal-selesai" id="tanggal-selesai-label">Tanggal Selesai</label>
-              <input type="date" id="tanggal-selesai" name="tanggal-selesai"/>
-          </div>
-          <div class="form-input">
-              <label for="waktu-selesai" id="waktu-selesai-label">Waktu Selesai</label>
-              <input type="time" id="waktu-selesai" name="waktu-selesai"/>
-          </div>
-          <div class="form-input">
+            <div class="form-input">
+              <label for="tanggal-mulai" id="tanggal-mulai-label"
+                >Tanggal Mulai Sewa</label
+              >
+              <input type="date" id="tanggal-mulai" name="tanggal-mulai" />
+            </div>
+            <div class="form-input">
+              <label for="waktu-mulai" id="waktu-mulai-label"
+                >Waktu Mulai</label
+              >
+              <input type="time" id="waktu-mulai" name="waktu-mulai" />
+            </div>
+            <div class="form-input">
+              <label for="tanggal-selesai" id="tanggal-selesai-label"
+                >Tanggal Selesai</label
+              >
+              <input type="date" id="tanggal-selesai" name="tanggal-selesai" />
+            </div>
+            <div class="form-input">
+              <label for="waktu-selesai" id="waktu-selesai-label"
+                >Waktu Selesai</label
+              >
+              <input type="time" id="waktu-selesai" name="waktu-selesai" />
+            </div>
+            <div class="form-input">
               <label for="lokasi" id="lokasi-label">Lokasi</label>
-              <input type="text" id="lokasi" name="lokasi"/>
-          </div>
+              <input type="text" id="lokasi" name="lokasi" />
+            </div>
 
-         <div class="cari-tiket">
-            <button type="submit">Cari</button>
-         </div>
-        </form>
+            <div class="cari-tiket">
+              <button type="submit">Cari</button>
+            </div>
+          </form>
 
           <div class="service-content-title">
             <h1><span class="title-pemesanan">Pemesanan Sewa Mobil</span></h1>
           </div>
           <div class="service-content-mobil">
-            <button>
+            <button class="active">
               <a href="#service-content-mobil">
                 <img src="./asset/mobil.jpg" alt="" />
               </a>
@@ -231,9 +243,43 @@
           <div class="card-profile">
             <img src="./asset/midah.jpg" alt="" />
             <div class="card-profile-content">
-              <h3>Kurnia Krisna R</h3>
-              <p class="divisi">Leader</p>
-              <p class="univ">Universitas Indraprasta PGRI</p>
+              <h3>Khamidah Arsyad</h3>
+              <p class="divisi">Front End</p>
+              <p class="univ">Universitas Muhammadiyah Semarang</p>
+              <p class="prodi">Statistika</p>
+            </div>
+            <div class="link-sosmed">
+              <a href="">
+                <img src="./asset/linkedin.jpg" alt="" />
+              </a>
+              <a href="">
+                <img src="./asset/email.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="card-profile">
+            <img src="./asset/midah.jpg" alt="" />
+            <div class="card-profile-content">
+              <h3>Zahra Ika</h3>
+              <p class="divisi">Front End</p>
+              <p class="univ">Universitas Airlangga</p>
+              <p class="prodi">Ekonomi Pembangunan</p>
+            </div>
+            <div class="link-sosmed">
+              <a href="">
+                <img src="./asset/linkedin.jpg" alt="" />
+              </a>
+              <a href="">
+                <img src="./asset/email.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="card-profile">
+            <img src="./asset/midah.jpg" alt="" />
+            <div class="card-profile-content">
+              <h3>Muzzaky Abdullah</h3>
+              <p class="divisi">Back End</p>
+              <p class="univ">STMIK Mardira Indonesia</p>
               <p class="prodi">Teknik Informatika</p>
             </div>
             <div class="link-sosmed">
@@ -248,10 +294,10 @@
           <div class="card-profile">
             <img src="./asset/midah.jpg" alt="" />
             <div class="card-profile-content">
-              <h3>Kurnia Krisna R</h3>
-              <p class="divisi">Leader</p>
-              <p class="univ">Universitas Indraprasta PGRI</p>
-              <p class="prodi">Teknik Informatika</p>
+              <h3>Revi Reziani Putri</h3>
+              <p class="divisi">Back End</p>
+              <p class="univ">Universitas Terbuka</p>
+              <p class="prodi">Ilmu Komunikasi</p>
             </div>
             <div class="link-sosmed">
               <a href="">
@@ -265,44 +311,10 @@
           <div class="card-profile">
             <img src="./asset/midah.jpg" alt="" />
             <div class="card-profile-content">
-              <h3>Kurnia Krisna R</h3>
-              <p class="divisi">Leader</p>
-              <p class="univ">Universitas Indraprasta PGRI</p>
-              <p class="prodi">Teknik Informatika</p>
-            </div>
-            <div class="link-sosmed">
-              <a href="">
-                <img src="./asset/linkedin.jpg" alt="" />
-              </a>
-              <a href="">
-                <img src="./asset/email.jpg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="card-profile">
-            <img src="./asset/midah.jpg"  alt="" />
-            <div class="card-profile-content">
-              <h3>Kurnia Krisna R</h3>
-              <p class="divisi">Leader</p>
-              <p class="univ">Universitas Indraprasta PGRI</p>
-              <p class="prodi">Teknik Informatika</p>
-            </div>
-            <div class="link-sosmed">
-              <a href="">
-                <img src="./asset/linkedin.jpg" alt="" />
-              </a>
-              <a href="">
-                <img src="./asset/email.jpg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="card-profile">
-            <img src="./asset/midah.jpg" alt="" />
-            <div class="card-profile-content">
-              <h3>Kurnia Krisna R</h3>
-              <p class="divisi">Leader</p>
-              <p class="univ">Universitas Indraprasta PGRI</p>
-              <p class="prodi">Teknik Informatika</p>
+              <h3>Fadhillah Agustin</h3>
+              <p class="divisi">Quality Assurance</p>
+              <p class="univ">Universitas Sumatra Utara</p>
+              <p class="prodi">Ilmu Kesehatan Masyarakat</p>
             </div>
             <div class="link-sosmed">
               <a href="">
@@ -318,7 +330,6 @@
     </section>
     <!-- About Section End -->
 
-
     <!-- Client Review Section -->
     <section class="client-review" id="client-review">
       <div class="client-review-content">
@@ -331,10 +342,10 @@
             </div>
             <div class="card-client-review">
               <h1>Andreas situ</h1>
-              <p> 
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                culpa sed, autem ullam consequatur debitis? Asperiores
-                eligendi minus officia odit voluptatibus!
+                culpa sed, autem ullam consequatur debitis? Asperiores eligendi
+                minus officia odit voluptatibus!
               </p>
             </div>
           </div>
@@ -345,10 +356,10 @@
             </div>
             <div class="card-client-review">
               <h1>Andreas situ</h1>
-              <p> 
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                culpa sed, autem ullam consequatur debitis? Asperiores
-                eligendi minus officia odit voluptatibus!
+                culpa sed, autem ullam consequatur debitis? Asperiores eligendi
+                minus officia odit voluptatibus!
               </p>
             </div>
           </div>
@@ -359,57 +370,53 @@
             </div>
             <div class="card-client-review">
               <h1>Andreas situ</h1>
-              <p> 
+              <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                culpa sed, autem ullam consequatur debitis? Asperiores
-                eligendi minus officia odit voluptatibus!
+                culpa sed, autem ullam consequatur debitis? Asperiores eligendi
+                minus officia odit voluptatibus!
               </p>
             </div>
           </div>
-
-        </div>  
-      </div>   
+        </div>
+      </div>
     </section>
     <!-- Client Review End -->
 
     <!-- footer Start -->
     <footer>
-        <div class="card-container-footer">
-            <div class="card-footer">
-                <a href="">
-                  <img src="./asset/logo.png" alt="">Travelyu
-                </a>
-                <div class="card-content-footer">
-                    <div class="service">
-                        <h1>Service</h1>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">order</a></li>
-                            <li><a href="">Destination</a></li>
-                            <!-- <li><a href="">My Order</a></li>
+      <div class="card-container-footer">
+        <div class="card-footer">
+          <a href=""> <img src="./asset/logo.png" alt="" />Travelyu </a>
+          <div class="card-content-footer">
+            <div class="service">
+              <h1>Service</h1>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">order</a></li>
+                <li><a href="">Destination</a></li>
+                <!-- <li><a href="">My Order</a></li>
                             <li><a href="">About</a></li> -->
-                        </ul> 
-                    </div>
-                    <div class="support">
-                        <h1>Support</h1>
-                    <ul>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Term of Use</a></li>
-                    </ul>
-                    </div>
-                    <div class="contact">
-                        <h1>Contact</h1>
-                    <ul>
-                        <li><a href="">+62 87812552</a></li>
-                        <li><a href="">travelyu@contact.us</a></li>
-                        <li><a href="">Jl. Bersamamu No. 26</a></li>
-                    </ul>
-                    </div>
-                </div>
+              </ul>
             </div>
+            <div class="support">
+              <h1>Support</h1>
+              <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Term of Use</a></li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h1>Contact</h1>
+              <ul>
+                <li><a href="">+62 87812552</a></li>
+                <li><a href="">travelyu@contact.us</a></li>
+                <li><a href="">Jl. Bersamamu No. 26</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-
 
     <script src="./js/script.js"></script>
   </body>

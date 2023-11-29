@@ -236,16 +236,18 @@
     margin-top: 40px;
     margin-bottom: 40px;
     align-items: center;
-    width: 170px;
-    height: 40px;
-    padding: 10px;
-    background-color: #002561;
+    padding: 10px 30px;
+    background-color:#0066b3;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 750;
     font-size: 15px;
+}
+
+.sudah-bayar:hover {
+  background-color:#5f96c1;
 }
 /* Content End */
 

@@ -22,11 +22,11 @@
     align-items: center;
     position: fixed;
     text-align: center;
-    width: 88%;
+    width: 93%;
     top: 0;
     padding: 10px 20px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
   
   .logo {
@@ -67,7 +67,7 @@
     justify-content: center;
   }
   
-  .logout button {
+  /* .logout button {
     margin-right: 30px;
     padding: 7px 25px;
     background-color: var(--color-3);
@@ -81,7 +81,11 @@
   .logout button:hover {
     margin-top: -5px;
   }
-  
+   */
+  .profile {
+    margin-left: 100px;
+  }
+
   .profile a img {
     width: 60%;
   }
@@ -183,9 +187,7 @@
     margin-top: 100px;
     margin-bottom: 40px;
     align-items: center;
-    width: 170px;
-    height: 40px;
-    padding: 10px;
+    padding: 10px 30px;
     background-color: #0066B3;
     color: white;
     border: none;
@@ -193,6 +195,10 @@
     cursor: pointer;
     font-weight: 750;
     font-size: 15px;
+}
+
+.continue-btn:hover {
+  background-color:#5f96c1;
 }
 /* Content End */
 

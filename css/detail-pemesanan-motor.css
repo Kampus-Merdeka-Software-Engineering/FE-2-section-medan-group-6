@@ -21,11 +21,11 @@
   align-items: center;
   position: fixed;
   text-align: center;
-  width: 88%;
+  width: 93%;
   top: 0;
   padding: 10px 20px;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .logo {
@@ -66,7 +66,7 @@
   justify-content: center;
 }
 
-.logout button {
+/* .logout button {
   margin-right: 30px;
   padding: 7px 25px;
   background-color: var(--color-3);
@@ -79,6 +79,10 @@
 
 .logout button:hover {
   margin-top: -5px;
+} */
+
+.profile {
+  margin-left: 100px;
 }
 
 .profile a img {
@@ -305,13 +309,17 @@
   font-weight: 550;
   font-size: 15px;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: #002561;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+}
+
+#btn-next:hover {
+  background-color: #5f96c1;
 }
 
 #btn-next a {

@@ -1,71 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-*{padding :0;
- margin :0;
-font-family: 'poppins';}
+:root {
+    --color-1: black;
+    --color-2: white;
+    --color-3: #3c44fd;
+    --color-4: #0155b7;
+    --color-5: #002561;
+  }
+
+
+*{
+    padding :0;
+    margin :0;
+    font-family: "poppins", sans-serif;
+}
 
 
 
 /* Header Start */
-nav.header {
+.navbar {
+    box-shadow: 0 0 5px grey;
+    background-color: var(--color-2);
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    padding : 5px 30px;
-    box-shadow: 0px 0px 5px rgb(152, 149, 149);
-}
-
-.namaprofil  {
-    width : 100px;
-    /* height: 50px; */
-    display : flex;
-}
-
-.namaprofil img {
-    width: 70px;
-    height : 30px;
-    padding-top : 10px
-}
-
-.profil img {width : 80%;
-}
-
-.namaprofil { color: #3C44FD;
-    font-family: 'Poppins';
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-left: 15px;
-}
-
-.header ul{list-style: none;
-    align-items: center;
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    width: 93%;
+    top: 0;
+    padding: 10px 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .logo {
+    width: 250px;
+  }
+  
+  .logo a img {
+    width: 20%;
+  }
+  
+  .logo a {
     display: flex;
-    gap: 20px;
-    color: #000;
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.header  ul li a{
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+    align-items: center;
     text-decoration: none;
-    color: #000;
-}
-
-.header img {
-    width : 70%;
-}
-
-.header span {color : #0F66CB}
-
+    color: var(--color-3);
+    font-size: 28px;
+    font-weight: 800;
+  }
+  
+  .navbar ul {
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-1);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .navbar ul li a:hover {
+    color: var(--color-3);
+    font-weight: bold;
+  }
+  
+  .profile-container {
+    display: flex;
+  }
+  /* 
+  .logout button {
+    margin-right: 30px;
+    padding: 7px 25px;
+    background-color: var(--color-3);
+    color: var(--color-2);
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .logout button:hover {
+    background-color: #5f96c1;
+    transition: 0.5s;
+  } */
+  
+  .profile {
+   margin-left: 100px;
+  }
+  
+  .profile a img {
+    width: 60%;
+  }
 /* Header End */
 
 /* Content Start */
@@ -73,10 +104,10 @@ nav.header {
 .intro {
     text-align: center;
     padding : 30px;
+    margin-top: 100px;
 }
 
 .intro span {color: #3C44FD;
-    font-family: Poppins;
     font-size: 45px;
     font-style: normal;
     font-weight: 800;
@@ -84,7 +115,6 @@ nav.header {
 }
 
 .intro p {color: #000;
-    font-family: Poppins;
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
@@ -153,7 +183,6 @@ nav.header {
 
 .detailpemesanan span {
     color: #000;
-    font-family: Poppins;
     font-size: 27px;
     font-style: normal;
     font-weight: 700;
@@ -163,7 +192,6 @@ nav.header {
 
 .detailpemesanan p {
     color: #000;
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -180,7 +208,6 @@ nav.header {
     text-align: center;
     padding: 7px 0px;
     color: #FFF;
-    font-family: Poppins;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;

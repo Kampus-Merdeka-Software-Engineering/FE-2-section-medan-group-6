@@ -26,11 +26,11 @@ button {
     align-items: center;
     position: fixed;
     text-align: center;
-    width: 88%;
+    width: 93%;
     top: 0;
     padding: 10px 20px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
   
   .logo {
@@ -77,7 +77,7 @@ button {
     justify-content: center;
   }
   
-  .logout button {
+  /* .logout button {
     margin-right: 30px;
     padding: 7px 25px;
     background-color: var(--color-3);
@@ -89,6 +89,10 @@ button {
   }
   
   .logout button:hover {
+  } */
+
+  .profile {
+    margin-left: 100px;
   }
   
   .profile a img {

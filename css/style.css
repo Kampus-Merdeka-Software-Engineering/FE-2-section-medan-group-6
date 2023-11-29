@@ -28,11 +28,11 @@ html {
   position: fixed;
   z-index: 10;
   text-align: center;
-  width: 88%;
+  width: 93%;
   top: 0;
   padding: 10px 20px;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .logo {
@@ -53,7 +53,7 @@ html {
 }
 
 .navbar ul {
-  padding-right: 10px;
+  margin-right: 300px;
   list-style: none;
   display: flex;
   gap: 30px;
@@ -76,7 +76,7 @@ html {
 .profile-container {
   display: flex;
 }
-
+/* 
 .logout button {
   margin-right: 30px;
   padding: 7px 25px;
@@ -89,11 +89,20 @@ html {
 }
 
 .logout button:hover {
-  margin-top: -5px;
+  background-color: #5f96c1;
+  transition: 0.5s;
+} */
+
+.profile {
+  margin-left: 100px;
 }
 
 .profile a img {
   width: 60%;
+}
+
+.menu-icon  {
+  display: none;
 }
 /* Navbar End */
 
@@ -123,18 +132,19 @@ html {
   padding-left: 50px;
 }
 
-.content  button {
+.content button {
   margin-top: 30px;
   margin-left: 50px;
-  padding: 15 25px;
-  background-color: #0066B3;
+  padding: 15px 25px;
+  background-color: #0066b3;
   border-radius: 10px;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
   border: none;
 }
 
-.content  button:hover {
-  margin-top: -1px;
+.content button:hover {
+  background-color: #5f96c1;
+  transition: 0.5s;
 }
 
 .content button a {
@@ -145,6 +155,7 @@ html {
 }
 
 .content .content-img {
+  margin-top: 50px;
   width: 80%;
 }
 
@@ -197,7 +208,7 @@ html {
   text-align: center;
 }
 
-.service-content .form-input  #waktu-mulai-label {
+.service-content .form-input #waktu-mulai-label {
   position: absolute;
   top: 130px;
   left: 400px;
@@ -205,7 +216,7 @@ html {
   text-align: center;
 }
 
-.service-content .form-input  #waktu-mulai {
+.service-content .form-input #waktu-mulai {
   width: 180px;
   height: 40px;
   border-radius: 10px;
@@ -259,7 +270,7 @@ html {
   text-align: center;
 }
 
-.service-content .form-input  #lokasi-label {
+.service-content .form-input #lokasi-label {
   position: absolute;
   top: 220px;
   left: 400px;
@@ -287,14 +298,15 @@ html {
   padding: 13px 50px;
   border-radius: 10px;
   border: none;
-  background-color:  #0066B3;
+  background-color: #0066b3;
   color: var(--color-2);
   font-size: 15px;
   font-weight: bold;
 }
 
 .service-content .cari-tiket button:hover {
-  margin-top: -10px;
+  background-color: #5f96c1;
+  transition: 0.5s;
 }
 
 .service-content-title {
@@ -329,12 +341,19 @@ html {
 .service-content-mobil button {
   width: 110px;
   height: 160px;
-  background-color: #002561;
+  background-color: #0155b7;
   border-radius: 20px 0px 0px 0px;
   border: none;
 }
 
+.service-content-mobil button:hover {
+  background-color: var(--color-5);
+  transition: 0.5s;
+}
 
+.active {
+  background-color: #002561 !important;
+}
 
 .service-content-mobil button a img {
   width: 50%;
@@ -458,7 +477,6 @@ html {
   text-align: center;
   background-image: url(../asset/bg-our-team.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card-profile {
@@ -571,7 +589,7 @@ html {
 footer {
   background: #002561;
   padding: 30px;
-  margin-top: 200px ;
+  margin-top: 200px;
 }
 .card-footer {
   height: 200px;
@@ -597,7 +615,6 @@ footer {
   font-weight: 800;
   padding-bottom: 5px;
   padding-left: 0px;
-  
 }
 
 .card-content-footer ul {
@@ -620,6 +637,458 @@ footer {
 }
 
 .card-content-footer .support {
- padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 /* Footer End */
+
+@media only screen and (max-width: 390px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar .logo {
+    margin-left: -30px;
+  }
+
+  .navbar .logo a {
+    font-size: 15;
+  }
+
+  .navbar .logo a img {
+    width: 10%;
+  }
+
+  .nav-link {
+    position: absolute;
+    height: calc(100vh-50px);
+    box-shadow: 20px 20px 10px 0px rgba(0, 0, 0, 0.25);
+    border: 0.1px solid #9f9f9f;
+    top: 55px;
+    left: -200px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: var(--color-2);
+  }
+
+  .navbar ul {
+    gap: 15px;
+    width: 30%;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .navbar ul li a {
+    font-size: 10px;
+    justify-content: center;
+    text-align: right;
+    color: var(--color-1);
+  }
+
+  .menu-icon  {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+  
+  }
+
+  .menu-icon button {
+    border: none;
+    background-color: var(--color-2);
+  }
+
+  .menu-icon button i {
+    font-size: 20px;
+    color: var(--color-3);
+  }
+
+  .nav-link.active2 {
+    left: 220px;
+    transition: 1s;
+  }
+  /* Navbar End */
+
+  .content {
+    margin-left: -30px;
+    margin-top: -170px;
+  }
+
+  .content .content-caption h1 {
+    font-size: 16px;
+  }
+
+  .content .content-caption p {
+    font-size: 7px;
+    margin-top: -7px;
+  }
+
+  .content .content-img {
+    width: 50%;
+    margin-top: -35px;
+  }
+
+  .content .content-caption button {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 8px;
+  }
+
+  .content .content-caption button a {
+    font-size: 5px;
+  }
+
+  /* Hero Section End */
+
+  .service {
+    margin-top: -100px;
+  }
+
+  .service div h1 {
+    font-size: 20px;
+  }
+
+  .service-content {
+    margin-top: -30px;
+    width: 300px;
+    height: 132px;
+    border-radius: 16px;
+  }
+
+  .service-content .form-input #tanggal-mulai-label {
+    position: absolute;
+    top: 55px;
+    left: 60px;
+    font-size: 7px;
+    text-align: center;
+  }
+
+  .service-content .form-input #tanggal-mulai {
+    width: 65px;
+    height: 15px;
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 60px;
+    font-size: 6.5px;
+    text-align: center;
+  }
+
+  .service-content .form-input #waktu-mulai-label {
+    position: absolute;
+    top: 55px;
+    left: 140px;
+    font-size: 7px;
+    text-align: center;
+  }
+
+  .service-content .form-input #waktu-mulai {
+    width: 65px;
+    height: 15px;
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 140px;
+    font-size: 6.5px;
+    text-align: center;
+  }
+  .service-content .form-input #tanggal-selesai-label {
+    position: absolute;
+    top: 55px;
+    left: 220px;
+    font-size: 7px;
+    text-align: center;
+  }
+
+  .service-content .form-input #tanggal-selesai {
+    width: 65px;
+    height: 15px;
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+    background-color: #fff;
+    position: absolute;
+    top: 65px;
+    left: 220px;
+    font-size: 6.5px;
+    text-align: center;
+  }
+
+  .service-content .form-input #waktu-selesai-label {
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    font-size: 7px;
+    text-align: center;
+  }
+
+  .service-content .form-input #waktu-selesai {
+    width: 65px;
+    height: 15px;
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    font-size: 6.5px;
+    text-align: center;
+  }
+
+  .service-content .form-input #lokasi-label {
+    position: absolute;
+    top: 90px;
+    left: 140px;
+    font-size: 7px;
+    text-align: center;
+  }
+
+  .service-content .form-input #lokasi {
+    width: 65px;
+    height: 15px;
+    border-radius: 4px;
+    border: 1px solid #b9b9b9;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 140px;
+    font-size: 6.5px;
+    text-align: center;
+  }
+
+  .service-content .cari-tiket button {
+    position: absolute;
+    top: 100px;
+    left: 227px;
+    padding: 4px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #0066b3;
+    color: var(--color-2);
+    font-size: 6.5px;
+    font-weight: bold;
+  }
+
+  .service-content-title {
+    width: 251px;
+    height: 40px;
+    position: absolute;
+    margin-left: 49px;
+    border-radius: 0px 15px 0px 0px;
+    background-color: #0155b7;
+  }
+
+  .service-content-title h1 {
+    position: absolute;
+    width: 100%;
+    left: -55px;
+    top: -35px;
+    color: var(--color-2);
+  }
+
+  .service-content-title h1 span {
+    font-size: 12px;
+  }
+
+  .service-content-mobil {
+    position: absolute;
+  }
+
+  .service-content-motor {
+    position: absolute;
+    margin-top: 65px;
+  }
+
+  .service-content-mobil button {
+    width: 50px;
+    height: 66px;
+    background-color: #0155b7;
+    border-radius: 15px 0px 0px 0px;
+    border: none;
+  }
+
+  .service-content-motor button {
+    width: 50px;
+    height: 67px;
+    border-radius: 0px 0px 0px 15px;
+    background-color: #0155b7;
+    border: none;
+  }
+  /* Service Section End */
+
+  .card-destinations-container {
+    background-size: contain;
+  }
+
+  .card-destinations-container::after {
+    top: 2630px;
+  }
+
+  .destinations-content {
+    margin-top: 100px;
+  }
+
+  .destinations-content h1 {
+    font-size: 20px;
+  }
+
+  .destinations-content p {
+    font-size: 10px;
+    padding: 10px 30px;
+  }
+
+  .card-destinations {
+    width: 200px;
+    height: 250px;
+    border-radius: 30px;
+  }
+
+  .card-destinations img {
+    width: 180px;
+    border-radius: 30px;
+  }
+
+  .card-destinations .card-content-destinations h3 {
+    font-size: 20px;
+  }
+
+  .card-destinations .card-content-destinations p {
+    font-size: 10px;
+  }
+  /* Destinations End */
+
+  .about {
+    margin-top: 100px;
+  }
+
+  .about-content h1 {
+    font-size: 20px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .card-profile-container {
+    background-size: contain;
+  }
+
+  .card-profile {
+    width: 200px;
+    height: 250px;
+    border-radius: 50px 5px 50px 5px;
+  }
+
+  .card-profile img {
+    width: 170px;
+    padding: 10px;
+    border-radius: 50px 5px 50px 5px;
+  }
+
+  .card-profile .card-profile-content h3 {
+    font-size: 15px;
+  }
+
+  .card-profile .card-profile-content p {
+    font-size: 8px;
+  }
+
+  .card-profile .link-sosmed a {
+    width: 40px;
+    margin: -5px;
+    margin-top: 5px;
+  }
+
+  .card-profile .link-sosmed a img {
+    width: 25px;
+    height: 13px;
+    padding: 7px;
+  }
+  /* About Section End */
+
+  .client-review {
+    margin-top: 100px;
+  }
+
+  .client-review-content h1 {
+    font-size: 20px;
+  }
+
+  .card-client-container {
+    padding: 30px;
+  }
+
+  .card-client-container .card-client {
+    width: 200px;
+    height: 300px;
+  }
+
+  .card-client .card-client-profile img {
+    width: 115px;
+    height: 110px;
+  }
+
+  .card-client .card-client-review h1 {
+    font-size: 20px;
+  }
+
+  .card-client .card-client-review p {
+    font-size: 10px;
+  }
+
+  /* Client review End*/
+
+  .card-footer a img {
+    width: 40%;
+  }
+
+  .card-footer a {
+    color: #3c44fd;
+    font-size: 10px;
+  }
+
+  footer {
+    background: #002561;
+    padding: 20px;
+    margin-top: 200px;
+  }
+
+  .card-footer {
+    height: 70px;
+    border-radius: 20px;
+    padding-left: 60px;
+  }
+
+  .card-content-footer {
+    padding-left: 60px;
+  }
+
+  .card-content-footer .support {
+    width: 50px;
+    margin-top: 10px;
+  }
+
+  .card-content-footer .contact {
+    width: 50px;
+    margin-top: 10px;
+  }
+
+  .card-content-footer .service {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .card-content-footer h1 {
+    font-size: 8px;
+  }
+
+  .card-content-footer ul {
+    width: 60px;
+    margin-top: -3px;
+  }
+
+  .card-content-footer ul li a {
+    font-size: 6px;
+  }
+}
