@@ -6,6 +6,7 @@
         <title>Menu Motor</title>
         <link rel="stylesheet" href="./css/list-motor.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
     </head>
     <body>
         <!-- Header Start -->
@@ -13,35 +14,40 @@
             <nav class="navbar">
               <div class="logo">
                 <a href="index.html">
-                  <img src="./asset/logo.png" alt="" />Travelyu 
+                  <img src="./asset/logo.png" alt="" />Travelyu
                 </a>
+              </div>
+      
+              <div class="menu-icon">
+                <button id="menu"> <i id="menu-list" class="ph ph-list"></i> </button>
               </div>
       
               <ul class="nav-link">
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="index.html">Service</a>
+                  <a href="#service">Service</a>
                 </li>
                 <li>
-                  <a href="index.html">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
                   <a href="my-order.html">My Order</a>
                 </li>
               </ul>
-      
+              <!-- 
               <div class="profile-container">
-                <!-- <div class="logout">
+                <div class="logout">
                   <button>Logout</button>
-                </div> -->
-                <div class="profile">
+                </div> 
+                 <div class="profile">
                   <a href="">
                     <img src="./asset/profile.jpg" alt="" />
                   </a>
                 </div>
-              
+                
+              </div> -->
             </nav>
           </header>
         <!-- Header End -->
@@ -51,7 +57,7 @@
         <div class="intro">
             <div class="card-intro">
                 <div class="card-content-intro">
-                    <div class="detailpemesanan">
+                    <div class="detailpemesananintro">
                         <p>Rental Motor</p>
                         <p><span>Rental Motor</span></p>
                         <p>Stasiun xxx Jum, 26 Okt 2023 09:00 - Sab, 27 Okt 2023 12:00   </p>
@@ -163,40 +169,39 @@
         <!-- Footer Start -->
         <footer>
             <div class="card-container-footer">
-                <div class="card-footer">
-                    <a href="">
-                      <img src="./asset/logo.png" alt="">Travelyu
-                    </a>
-                    <div class="card-content-footer">
-                        <div class="service">
-                            <h1>Service</h1>
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">order</a></li>
-                                <li><a href="">Destination</a></li>
-                                <!-- <li><a href="">My Order</a></li>
-                                <li><a href="">About</a></li> -->
-                            </ul> 
-                        </div>
-                        <div class="support">
-                            <h1>Support</h1>
-                        <ul>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">Term of Use</a></li>
-                        </ul>
-                        </div>
-                        <div class="contact">
-                            <h1>Contact</h1>
-                        <ul>
-                            <li><a href="">+62 87812552</a></li>
-                            <li><a href="">travelyu@contact.us</a></li>
-                            <li><a href="">Jl. Bersamamu No. 26</a></li>
-                        </ul>
-                        </div>
-                    </div>
+              <div class="card-footer">
+                <a href=""> <img src="./asset/logo.png" alt="" />Travelyu </a>
+                <div class="card-content-footer">
+                  <div class="service">
+                    <h1>Service</h1>
+                    <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">order</a></li>
+                      <li><a href="">Destination</a></li>
+                      <!-- <li><a href="">My Order</a></li>
+                                  <li><a href="">About</a></li> -->
+                    </ul>
+                  </div>
+                  <div class="support">
+                    <h1>Support</h1>
+                    <ul>
+                      <li><a href="">FAQ</a></li>
+                      <li><a href="">Term of Use</a></li>
+                    </ul>
+                  </div>
+                  <div class="contact">
+                    <h1>Contact</h1>
+                    <ul>
+                      <li><a href="">+62 87812552</a></li>
+                      <li><a href="">travelyu@contact.us</a></li>
+                      <li><a href="">Jl. Bersamamu</a></li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
             </div>
-        </footer>
+          </footer>
+      
         <!-- Footer End -->
     </body>
 </html>

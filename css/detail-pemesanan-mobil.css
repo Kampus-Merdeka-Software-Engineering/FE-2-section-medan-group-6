@@ -96,6 +96,11 @@
 
 /* Content Start */
 /* Content Intro Start */
+.detailpemesanan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .card-detailpemesanan {
   width: 800px;
@@ -104,7 +109,7 @@
   border-radius: 20px;
   padding: 20px 40px;
   box-shadow: 0px 0px 2px rgb(162, 158, 158);
-  margin: 200px 200px 30px 200px;
+  margin-top: 200px;
 }
 
 .card-content-detailpemesanan {
@@ -398,3 +403,276 @@ footer {
   padding-bottom: 20px;
 }
 /* Footer End */
+
+@media screen and (max-width: 425px) {
+/* Header Start */
+.navbar {
+  padding: 15px 10px;
+  padding-right: 10px;
+  padding-left: 30px;
+}
+
+.logo {
+  width: 250px;
+  margin-left: -10px;
+}
+
+.logo a img {
+  width: 25%;
+}
+
+.logo a {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.navbar ul {
+  padding-right: 5px;
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  width : 850px;
+  padding-left: 30px;
+  gap: 5px;
+}
+
+.navbar ul li p {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.navbar ul  li .fa-circle-chevron-right {
+  padding-top: 2px;
+  font-size: 10px;
+}
+/* Header End */
+/* Content Start */
+/* Content Intro Start*/
+
+.card-detailpemesanan {
+  margin-top: 100px;
+  width: 320px;
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 10px;
+  box-shadow: 0px 0px 2px rgb(162, 158, 158);
+}
+
+.card-content-detailpemesanan {
+  padding: 10px 5px;
+}
+
+.fotopemesanan {
+  padding-right: 10px 3px;
+}
+
+.fotopemesanan img {
+  width: 50px;
+}
+
+.transmisi {
+  gap: 4px;
+}
+
+.bagasi {
+  gap: 4px;
+}
+
+.kursi {
+  gap: 4px;
+}
+
+.fa-car-side {
+  font-size: 8px;
+}
+
+.fa-suitcase {
+  font-size: 8px;
+}
+
+.fa-couch {
+  font-size: 8px;
+}
+
+.fa-calendar-days {
+  font-size: 8px;
+}
+
+.spesifikasikendaraan {
+  gap: 2px;
+}
+
+.tanggalpemesanan {
+  gap: 2px;
+  width : 250px;
+}
+
+.pemesanan {
+  padding: 0px 5px;
+}
+
+.pemesanan span {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 0px;
+}
+
+.pemesanan p {
+  font-size: 9px;
+  font-weight: 400;
+  padding: 1px 0px;
+}
+
+.harga {
+  margin-left: -125px;
+}
+.harga p {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 30px;
+  text-align: center;
+  width  :100px;
+}
+
+.harga span {
+  font-size: 12px;
+  font-weight: 700;
+}
+/* Content Intro End */
+/* Content Form Start */
+
+.card-form-pemesan {
+  margin: 50px auto 10px;
+  width: 250px;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px 20px;
+  box-shadow: 0px 0px 2px rgb(162, 158, 158);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-form-pemesan h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  padding-top: 2px;
+}
+
+.fa-file-invoice {
+  font-size: 18px;
+}
+
+.card-form-pemesan form {
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0px;
+  margin-bottom: 15px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group label {
+  font-size: 13px;
+}
+
+.input-group .form-control {
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  outline: none;
+}
+/* Content Form End */
+#btn-next {
+  text-align: center;
+  font-weight: 550;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #0066b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+/* Content End */
+/* Footer Start */
+.card-footer a img {
+  width: 25%;
+}
+
+.card-footer a {
+  color: #3c44fd;
+  font-size: 15px;
+}
+
+footer {
+  background: #002561;
+  padding: 20px;
+  margin-top: 200px;
+}
+
+.card-footer {
+  height: 70px;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+
+.card-content-footer {
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.card-content-footer .support {
+  width: 50px;
+  margin-top: -5px;
+}
+
+.card-content-footer .contact {
+  width: 50px;
+  margin-top: -5px;
+}
+
+.card-content-footer .service {
+  width: 50px;
+  height: 50px;
+  margin-top: -5px;
+}
+
+.card-content-footer h1 {
+  font-size: 12px;
+}
+
+.card-content-footer ul {
+  width: 60px;
+  margin-top: -3px;
+}
+
+.card-content-footer ul li a {
+  font-size: 8px;
+}
+/* Footer End */
+}

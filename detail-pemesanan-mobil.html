@@ -43,11 +43,11 @@
             <!-- <div class="logout">
               <button>Logout</button>
             </div> -->
-            <div class="profile">
+            <!-- <div class="profile">
               <a href="">
                 <img src="./asset/profile.jpg" alt="" />
               </a>
-            </div>
+            </div> -->
           
         </nav>
       </header>
@@ -102,13 +102,16 @@
                 <div class="col">
                     <div class="input-group">
                         <label for="title">Titel</label>
-                        <input type="text" name="title" class="form-control">
+                        <select type="text" name="title" class="form-control">
+                            <option value="">Tn.</option>
+                            <option value="">Ny.</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-5">
                     <div class="input-group">
                         <label for="nama_pemesan">Nama Pemesan</label>
-                        <input type="text" name="nama-pemesan" class="form-control">
+                        <input type="text" name="nama-pemesan" class="form-control" required>
                     </div>
                 </div>
             </div>
@@ -116,7 +119,7 @@
                 <div class="col">
                     <div class="input-group">
                         <label for="nik">NIK</label>
-                        <input type="text" class="form-control" name="nik">
+                        <input type="tel" class="form-control" name="nik" minlength="16" maxlength="16">
                     </div>
                 </div>
             </div>
@@ -124,7 +127,7 @@
                 <div class="col">
                     <div class="input-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email">
+                        <input type="email" class="form-control" name="email" required>
                     </div>
                 </div>
             </div>
@@ -132,7 +135,7 @@
                 <div class="col">
                     <div class="input-group">
                         <label for="no-hp">Nomor Handphone</label>
-                        <input type="text" class="form-control" name="no-hp">
+                        <input type="tel" class="form-control" name="no-hp"placeholder="08xx-xxxx-xxxx" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
                     </div>
                 </div>
             </div>
@@ -149,40 +152,38 @@
     <!-- Footer Start -->
     <footer>
         <div class="card-container-footer">
-            <div class="card-footer">
-                <a href="">
-                  <img src="./asset/logo.png" alt="">Travelyu
-                </a>
-                <div class="card-content-footer">
-                    <div class="service">
-                        <h1>Service</h1>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">order</a></li>
-                            <li><a href="">Destination</a></li>
-                            <!-- <li><a href="">My Order</a></li>
-                            <li><a href="">About</a></li> -->
-                        </ul> 
-                    </div>
-                    <div class="support">
-                        <h1>Support</h1>
-                    <ul>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">Term of Use</a></li>
-                    </ul>
-                    </div>
-                    <div class="contact">
-                        <h1>Contact</h1>
-                    <ul>
-                        <li><a href="">+62 87812552</a></li>
-                        <li><a href="">travelyu@contact.us</a></li>
-                        <li><a href="">Jl. Bersamamu No. 26</a></li>
-                    </ul>
-                    </div>
-                </div>
+          <div class="card-footer">
+            <a href=""> <img src="./asset/logo.png" alt="" />Travelyu </a>
+            <div class="card-content-footer">
+              <div class="service">
+                <h1>Service</h1>
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">order</a></li>
+                  <li><a href="">Destination</a></li>
+                  <!-- <li><a href="">My Order</a></li>
+                              <li><a href="">About</a></li> -->
+                </ul>
+              </div>
+              <div class="support">
+                <h1>Support</h1>
+                <ul>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Term of Use</a></li>
+                </ul>
+              </div>
+              <div class="contact">
+                <h1>Contact</h1>
+                <ul>
+                  <li><a href="">+62 87812552</a></li>
+                  <li><a href="">travelyu@contact.us</a></li>
+                  <li><a href="">Jl. Bersamamu</a></li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <!-- Footer End -->
 </body>
