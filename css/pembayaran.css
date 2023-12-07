@@ -420,6 +420,14 @@
       font-weight: 400;
   }
 
+  .waktupembayaran {
+    gap: 3px;
+  }
+
+  .kodepembayaran {
+    gap: 5px;
+  }
+
   .codepembayaran {color: #000;
       font-size: 14px;
       font-weight: 600;
