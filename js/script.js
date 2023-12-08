@@ -1,8 +1,10 @@
 let button_mobil = document.querySelector(".service-content-mobil");
 let button_motor = document.querySelector(".service-content-motor");
 let title_pemesanan = document.querySelector(".title-pemesanan");
-let menu = document.querySelector("#menu");
-let navLink = document.querySelector(".nav-link");
+let menu            = document.querySelector("#menu");
+let navLink         = document.querySelector(".nav-link");
+let pesananRental   = document.querySelector("#pesananRental");
+const API_URL       = "http://localhost:3000";
 
 button_mobil.addEventListener("click", () => {
   title_pemesanan.innerHTML = "Pemesanan Sewa Mobil";
@@ -14,6 +16,28 @@ button_mobil.addEventListener("click", () => {
   document
     .querySelector(".service-content-motor button")
     .classList.remove("active");
+});
+
+pesananRental.addEventListener("click", (event) => {
+    event.preventDefault()
+    fetch(`${API_URL}/api/pesanan/addPesanan`, {
+        method  : 'POST',
+        headers : {
+          'Content-Type' : 'application/json'
+        },
+        body    : JSON.stringify({
+          'tanggalMulaiSewa' : document.querySelector('#tanggal-mulai').value,
+          'waktuMulai'       : document.querySelector('#waktu-mulai').value,
+          'tanggalSelesai'   : document.querySelector('#tanggal-selesai').value,
+          'waktuSelesai'     : document.querySelector('#waktu-selesai').value,
+          'lokasi'           : document.querySelector('#lokasi').value
+        })
+    })
+    .then(response => response.json())
+    .then(response => {
+      document.querySelector('#id').value = response.id
+      document.querySelector("#form-pemesanan").submit()
+    })
 });
 
 button_motor.addEventListener("click", () => {
