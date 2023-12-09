@@ -2,6 +2,8 @@ let menu = document.querySelector("#menu");
 let navLink = document.querySelector(".nav-link");
 const API_URL = "http://localhost:3000"
 const containerElementMobil = document.getElementById('container')
+let URL_PARAMS = new URLSearchParams(window.location.search)
+let id = URL_PARAMS.get("id")
 
 fetch(`${API_URL}/api/mobil/allMobil`, { method : 'GET'})
  .then(response => response.json())
@@ -36,7 +38,7 @@ fetch(`${API_URL}/api/mobil/allMobil`, { method : 'GET'})
         </div>
                 <div class="harga">
                     <p> <span>Rp. ${tabel_mobil.harga}</span>/hari</p>
-                    <a href="./detail-pemesanan-mobil.html" class="buttonstep">Lanjutkan</a>
+                    <a href="./detail-pemesanan-mobil.html?id_pesanan=${id}&&id_mobil=${tabel_mobil.id}" class="buttonstep">Lanjutkan</a>
                 </div>
             </div>
         </div>
@@ -44,6 +46,12 @@ fetch(`${API_URL}/api/mobil/allMobil`, { method : 'GET'})
 
         containerElementMobil.appendChild(elemenMobil)
     });
+ })
+
+fetch(`${API_URL}/api/pesanan/${id}`, { method : 'GET'})
+ .then(response => response.json())
+ .then(data => {
+    
  })
 
  
