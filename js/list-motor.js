@@ -33,7 +33,7 @@ fetch(`${API_URL}/api/motor/allMotor`, { method : 'GET'})
                             <p> <span>Rp. ${tabelmotor.harga}</span>/hari</p>
                         </div>
                         <div class="buttonstep">
-                            <a href="./detail-pemesanan-motor.html">Lanjutkan</a>
+                            <a href="./detail-pemesanan-motor.html?id_pesanan=${id}&&id_motor=${tabelmotor.id}">Lanjutkan</a>
                         </div>
                     </div>
               </div>`

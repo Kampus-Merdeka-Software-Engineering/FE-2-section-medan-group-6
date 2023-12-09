@@ -49,26 +49,3 @@ window.addEventListener("DOMContentLoaded", async () => {
 </div>
     `
 })
-
-pesananRental.addEventListener("click", (event) => {
-    event.preventDefault()
-    fetch(`${API_URL}/api/pemesan/addPemesan`, {
-        method  : 'POST',
-        headers : {
-          'Content-Type' : 'application/json'
-        },
-        body    : JSON.stringify({
-          'tanggalMulaiSewa' : document.querySelector('#tanggal-mulai').value,
-          'waktuMulai'       : document.querySelector('#waktu-mulai').value,
-          'tanggalSelesai'   : document.querySelector('#tanggal-selesai').value,
-          'waktuSelesai'     : document.querySelector('#waktu-selesai').value,
-          'lokasi'           : document.querySelector('#lokasi').value
-        })
-    })
-    .then(response => response.json())
-    .then(response => {
-      document.querySelector('#id').value = response.id
-      document.querySelector("#form-pemesanan").submit()
-    })
-});
-
