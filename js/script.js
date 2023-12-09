@@ -7,7 +7,7 @@ let pesananRental   = document.querySelector("#pesananRental");
 const API_URL       = "http://localhost:3000";
 
 button_mobil.addEventListener("click", () => {
-  title_pemesanan.innerHTML = "Pemesanan Sewa Mobil";
+  title_pemesanan.innerHTML = "Pesanan Sewa Mobil";
   let form_pemesanan = document.querySelector("#form-pemesanan");
   form_pemesanan.action = "list-mobil.html";
   document
@@ -41,7 +41,7 @@ pesananRental.addEventListener("click", (event) => {
 });
 
 button_motor.addEventListener("click", () => {
-  title_pemesanan.innerHTML = "Pemesanan Sewa Motor";
+  title_pemesanan.innerHTML = "Pesanan Sewa Motor";
   let form_pemesanan = document.querySelector("#form-pemesanan");
   form_pemesanan.action = "list-motor.html";
   document
