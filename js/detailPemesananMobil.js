@@ -34,8 +34,7 @@ window.addEventListener("DOMContentLoaded", async () => {
                     <p>${mobil.jumlahMuatan}</p>
                 </div>
             </div>
-            <p>Dengan Supir</p>
-            <p>Location</p>
+            <p>${pesanan.lokasi}</p>
             <div class="tanggalpemesanan">
                 <i class="fa-solid fa-calendar-days"></i>
                 <p>${pesanan.tanggalMulaiSewa}</p>

@@ -57,25 +57,3 @@ button_motor.addEventListener("click", () => {
 document.querySelector("#menu").onclick = () => {
   navLink.classList.toggle("active2");
 };
-
-// let tanggal = document.querySelector("#tanggal");
-// let month = [
-//   "Januari",
-//   "Febuari",
-//   "Maret",
-//   "April",
-//   "Mei",
-//   "Juni",
-//   "Juli",
-//   "Agustus",
-//   "September",
-//   "Oktober",
-//   "November",
-//   "Desember",
-// ];
-
-// tanggal.innerHTML = month[new Date().getMonth()];
-
-// tanggal.innerHTML = new Date().toDateString();
-
-// tanggal.innerHTML = new Date().getDay();
