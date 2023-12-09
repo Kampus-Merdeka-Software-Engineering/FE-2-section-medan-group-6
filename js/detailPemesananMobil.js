@@ -1,7 +1,8 @@
-const API_URL = "http://localhost:3000"
-let URL_PARAMS = new URLSearchParams(window.location.search)
-let idMobil = URL_PARAMS.get("id_mobil")
-let idPesanan = URL_PARAMS.get("id_pesanan")
+const API_URL       = "http://localhost:3000"
+let URL_PARAMS      = new URLSearchParams(window.location.search)
+let idMobil         = URL_PARAMS.get("id_mobil")
+let idPesanan       = URL_PARAMS.get("id_pesanan")
+let pemesan         = document.querySelector("#btn-next");
 
 window.addEventListener("DOMContentLoaded", async () => {
     const mobil = await fetch(`${API_URL}/api/mobil/${idMobil}`)
@@ -48,3 +49,27 @@ window.addEventListener("DOMContentLoaded", async () => {
 </div>
     `
 })
+
+pemesan.addEventListener("click", (event) => {
+    event.preventDefault()
+    fetch(`${API_URL}/api/pemesan/addPemesan`, {
+        method  : 'POST',
+        headers : {
+          'Content-Type' : 'application/json'
+        },
+        body    : JSON.stringify({
+          'nama'            : document.querySelector('#nama-pemesan').value,
+          'nik'             : document.querySelector('#nik').value,
+          'email'           : document.querySelector('#email').value,
+          'nomorHandphone'  : document.querySelector('#no-hp').value,
+          'tabelMobilId'    : idMobil,
+          'tabelMotorId'    : "",
+          'tabelpesananId'  : idPesanan
+        })
+    })
+    .then(response => response.json())
+    .then(response => {
+      document.querySelector('#id').value = response.id
+      document.querySelector("#form-pemesan").submit()
+    })
+});
