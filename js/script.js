@@ -4,7 +4,7 @@ let title_pemesanan = document.querySelector(".title-pemesanan");
 let menu            = document.querySelector("#menu");
 let navLink         = document.querySelector(".nav-link");
 let pesananRental   = document.querySelector("#pesananRental");
-const API_URL       = "http://localhost:3000";
+const API_URL       = "https://be-2-medan-6-production.up.railway.app";
 
 button_mobil.addEventListener("click", () => {
   title_pemesanan.innerHTML = "Pesanan Sewa Mobil";

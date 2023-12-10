@@ -1,6 +1,6 @@
 let menu = document.querySelector("#menu");
 let navLink = document.querySelector(".nav-link");
-const API_URL = "http://localhost:3000"
+const API_URL = "https://be-2-medan-6-production.up.railway.app"
 const containerElemenMyOrder = document.getElementById('container')
 
 

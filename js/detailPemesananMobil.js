@@ -1,4 +1,4 @@
-const API_URL       = "http://localhost:3000"
+const API_URL       = "https://be-2-medan-6-production.up.railway.app"
 let URL_PARAMS      = new URLSearchParams(window.location.search)
 let idMobil         = URL_PARAMS.get("id_mobil")
 let idPesanan       = URL_PARAMS.get("id_pesanan")
