@@ -69,11 +69,8 @@ pemesan.addEventListener("click", (event) => {
     })
     .then(response => response.json())
     .then(response => {
-      document.querySelector('#id').value = response.id
-      document.querySelector("#form-pemesan").submit()
+        document.querySelector('#id').value = response.id
+        window.location.href = `./metode-pembayaran.html`
+        document.querySelector("#form-pemesan").submit()
     })
 });
-
-pemesan.addEventListener("click", (event) => {
-    window.location.href = `./metode-pembayaran.html`
-})
