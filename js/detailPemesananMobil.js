@@ -63,7 +63,7 @@ pemesan.addEventListener("click", (event) => {
           'email'           : document.querySelector('#email').value,
           'nomorHandphone'  : document.querySelector('#no-hp').value,
           'tabelMobilId'    : idMobil,
-          'tabelMotorId'    : "",
+          'tabelMotorId'    : idMotor,
           'tabelpesananId'  : idPesanan
         })
     })
