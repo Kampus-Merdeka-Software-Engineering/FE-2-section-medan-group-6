@@ -1,4 +1,5 @@
 let searchParams = new URLSearchParams(window.location.search);
+// hdaghghag
 
 console.log(searchParams.get("type"));
 
