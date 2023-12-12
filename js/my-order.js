@@ -11,7 +11,7 @@ document.querySelector("#menu").onclick = () => {
   fetch(`${API_URL}/api/pemesan/allPemesan`, { method : 'GET'})
  .then(response => response.json())
  .then(data => {
-    data.forEach(tabelpemesan => {
+    data.forEach((tabelpemesan) => {
         const elemenMyOrder     = document.createElement('div')
         elemenMyOrder.className = 'myorder'
 
