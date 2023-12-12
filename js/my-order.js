@@ -8,10 +8,10 @@ document.querySelector("#menu").onclick = () => {
     navLink.classList.toggle("active2");
   };
 
-  fetch(`${API_URL}/api/pembayaran/allPembayaran`, { method : 'GET'})
+  fetch(`${API_URL}/api/pemesan/allPemesan`, { method : 'GET'})
  .then(response => response.json())
  .then(data => {
-    data.forEach(tabelpembayaran=> {
+    data.forEach(tabelpemesan => {
         const elemenMyOrder     = document.createElement('div')
         elemenMyOrder.className = 'myorder'
 
@@ -19,19 +19,19 @@ document.querySelector("#menu").onclick = () => {
                 <div class="card-myorder">
                 <div class="card-content-myorder">
                     <div class="detailpemesanan">
-                        <p><span>${tabelpembayaran.virtualAccount}</span></p>
+                        <p><span>${tabelpemesan.nama}</span></p>
                         <div class="spesifikasikendaraan">
                             <div class="transmisi">
-                                <p>Rp. ${tabelpembayaran.totalHarga}</p>
+                                <p>Rp. ${tabelpemesan.nomorHandphone}</p>
                             </div>
                         </div>
                         <div class="tanggalpemesanan">
                             <i class="fa-solid fa-calendar-days"></i>
-                            <p>${tabelpembayaran.createdAt}</p>
+                            <p>${tabelpemesan.email}</p>
                         </div>
                     </div>
                     <div class="statuspemesanan">
-                        <p>${tabelpembayaran.lunasAtauTidak}</p>
+                        <p>lunas</p>
                     </div>
                 </div>
             </div>      `

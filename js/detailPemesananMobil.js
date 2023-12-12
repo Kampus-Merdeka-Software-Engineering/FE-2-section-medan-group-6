@@ -72,4 +72,7 @@ pemesan.addEventListener("click", (event) => {
         document.querySelector('#id').value = response.id
         document.querySelector("#form-pemesan").submit()
     })
+
+    
+    .catch(error => console.error('Error :', error))
 });
